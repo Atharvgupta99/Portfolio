@@ -56,11 +56,13 @@ body {
     padding: 4rem 0;
     background: #f4d1ae;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .about-content {
-    max-width: 600px;
+    max-width: 450px; /* Reduced width for bio */
     text-align: justify;
+    flex: 1;
 }
 
 .about-content h2 {
@@ -72,24 +74,12 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.skills {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.skills li {
-    background: #fff;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-}
-
 .profile-img {
-    width: 300px;
-    height: auto;
+    width: 200px; /* Smaller image size */
+    height: 200px;
     border-radius: 50%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    margin-left: 2rem;
+    flex-shrink: 0;
 }
 
 /* Portfolio Section */
